@@ -1,0 +1,145 @@
+"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Customised Pill Dispenser Tool</title>
+  <meta name="description" content="Affordable Arduino-based customised pill dispenser with 6 compartments, RTC scheduling, servo-actuated release, LCD, LEDs and IR verification — ideal for improving medication adherence for elderly patients.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Pill Dispenser</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#design">Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prototype">Prototype</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero text-dark">
+  <div class="container py-6">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-5">Customised Pill Dispenser Tool</h1>
+        <p class="lead text-muted">An affordable, Arduino-driven automated pill dispenser with six compartments, accurate RTC scheduling, servo-actuated dispensing, LCD feedback, LED indicators and IR verification — designed to improve medication adherence for elderly and chronic patients.</p>
+        <a href="#design" class="btn btn-primary btn-lg me-2">See Design</a>
+        <a href="#prototype" class="btn btn-outline-secondary btn-lg">View Prototype</a>
+        <div class="mt-4 small text-muted">Estimated DIY cost: ₹2.5K–4K • Dispensing accuracy: ~95–100% • Activation delay: &lt;2s</div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="device-card mx-auto">
+          <img id="device-image" src="placeholder.jpg" alt="Pill Dispenser Prototype" class="img-fluid rounded">
+          <div class="caption mt-2 small text-muted">Prototype: 6 compartments • Servo • DS3231 RTC • LCD • IR sensor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <h2>About</h2>
+    <p>The Customised Pill Dispenser Tool addresses medication non-adherence in elderly and multi-medicated patients by automating dose release with accurate scheduling and verification. Built around an Arduino Uno, DS3231 RTC, a servo-driven 6-compartment rotating tray, and simple user feedback (LCD, LEDs, buzzer), the device is low-cost, modular, and easy to build.</p>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Problem</h5>
+        <p>Missed or incorrect doses lead to complications. Caregivers need a low-cost, reliable tool to reduce errors.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Solution</h5>
+        <p>Automated timed dispensing with verification reduces human error and supports caregivers.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Benefits</h5>
+        <ul>
+          <li>Improves adherence</li>
+          <li>Simple UI — LCD, LEDs, buzzer</li>
+          <li>Expandable (IoT, remote monitoring)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design" class="py-5 bg-light">
+  <div class="container">
+    <h2>Design</h2>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <h5>Block Diagram</h5>
+        <img src="wiring.svg" alt="Wiring Diagram" class="img-fluid shadow-sm rounded">
+      </div>
+      <div class="col-lg-6">
+        <h5>Components</h5>
+        <ul>
+          <li>Arduino Uno (controller)</li>
+          <li>DS3231 RTC (timekeeping)</li>
+          <li>SG90 / micro servo (rotating tray)</li>
+          <li>16x2 LCD (status display)</li>
+          <li>IR sensor (dispense verification)</li>
+          <li>Buzzer & LEDs (alerts)</li>
+        </ul>
+        <a class="btn btn-outline-primary mt-3" href="bom.csv" download>Download BOM (CSV)</a>
+        <a class="btn btn-outline-secondary mt-3 ms-2" href="README.md" download>Download Build Guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prototype" class="py-5">
+  <div class="container">
+    <h2>Prototype</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <h5>Build Log & Results</h5>
+        <p>Prototype assembled with a 3D printed rotating tray and acrylic housing. Performance testing showed dispensing success ~95–100% across varied pill sizes and activation latency under 2 seconds. IR verification reduced missed-dispense events.</p>
+        <h6 class="mt-3">Arduino Sketch</h6>
+        <pre class="small code-block">Open <code>arduino/CustomPillDispenser.ino</code> from the zip to view the full sketch.</pre>
+      </div>
+      <div class="col-md-6">
+        <h5>Gallery</h5>
+        <div class="row g-2">
+          <div class="col-6"><img src="placeholder.jpg" alt="prototype" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="placeholder.jpg" alt="prototype" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="placeholder.jpg" alt="prototype" class="img-fluid rounded"></div>
+          <div class="col-6"><img src="placeholder.jpg" alt="prototype" class="img-fluid rounded"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-secondary text-white">
+  <div class="container">
+    <h2>Contact & Support</h2>
+    <p>Questions about the build or want a custom unit or demo? Reach out.</p>
+    <form action="#" onsubmit="alert('Form disabled in demo.'); return false;">
+      <div class="row g-3">
+        <div class="col-md-4"><input class="form-control" placeholder="Name" required /></div>
+        <div class="col-md-4"><input class="form-control" placeholder="Email" required /></div>
+        <div class="col-md-4"><input class="form-control" placeholder="Subject" /></div>
+        <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
+        <div class="col-12"><button class="btn btn-light">Send Message</button></div>
+      </div>
+    </form>
+    <div class="mt-3 small">Image generation prompt included in download. Replace <code>placeholder.jpg</code> with your generated image for best results.</div>
+  </div>
+</section>
+
+<footer class="py-3 text-center small">
+  <div class="container">© Customised Pill Dispenser Tool — Built with Arduino • Project files included</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+"""

@@ -1,0 +1,9 @@
+component,description,quantity,approx_cost(INR),notes
+Arduino Uno,R3 compatible microcontroller board,1,900,Clone or genuine version works
+DS3231 RTC,Real-time clock module with coin cell,1,350,Provides accurate timing for dispensing
+SG90 Servo Motor,9g micro servo for tray rotation,1,120,Connect to PWM pin D9
+16x2 LCD,Character display for showing time and messages,1,250,Can use I2C adapter to reduce pin use
+IR Sensor,Infrared sensor to detect pill dispensing,1,80,Detects if pill has been released
+Buzzer,Audio alert for medication time,1,40,Connect to digital pin D6
+LEDs,"Status indicators (green, yellow, red)",3,30,Use 220Ω resistors in series
+Miscellaneous,"Wires, headers, screws, 3D printed body",1,200,Assembly materials

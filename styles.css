@@ -1,0 +1,11 @@
+""":root{
+  --brand:#0b5cff;
+  --muted:#6c757d;
+}
+body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+.hero{background:linear-gradient(90deg, rgba(11,92,255,0.06), rgba(0,0,0,0.02)); padding:60px 0;}
+.device-card{max-width:360px;background:white;border-radius:12px;padding:12px;box-shadow:0 12px 30px rgba(10,30,60,0.06);}
+.code-block{background:#0f1724;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto;}
+.btn-primary{background:var(--brand);border:0;}
+.bg-light{--bs-bg-opacity:1;background-color:#fbfcff!important;}
+"""

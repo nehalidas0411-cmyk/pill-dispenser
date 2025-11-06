@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <style>
+    .t{font:16px sans-serif; fill:#0b2640}
+    .box{fill:#ffffff;stroke:#123456;stroke-width:2;rx:8;filter:drop-shadow(0 6px 12px rgba(0,0,0,0.08))}
+    .line{stroke:#0b2640;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0b2640" />
+    </marker>
+  </defs>
+
+  <rect x="40" y="40" width="260" height="120" class="box"/>
+  <text x="170" y="85" class="t" text-anchor="middle">Arduino Uno</text>
+  <rect x="420" y="40" width="220" height="100" class="box"/>
+  <text x="530" y="85" class="t" text-anchor="middle">DS3231 RTC</text>
+  <rect x="420" y="180" width="220" height="100" class="box"/>
+  <text x="530" y="230" class="t" text-anchor="middle">16x2 LCD</text>
+  <rect x="40" y="180" width="260" height="120" class="box"/>
+  <text x="170" y="240" class="t" text-anchor="middle">Servo Motor (Tray)</text>
+  <rect x="740" y="40" width="220" height="120" class="box"/>
+  <text x="850" y="85" class="t" text-anchor="middle">IR Sensor</text>
+  <rect x="740" y="180" width="220" height="120" class="box"/>
+  <text x="850" y="230" class="t" text-anchor="middle">Buzzer & LEDs</text>
+
+  <path d="M300,100 L420,100" class="line"/>
+  <path d="M300,240 L420,240" class="line"/>
+  <path d="M560,100 L740,100" class="line"/>
+  <path d="M560,240 L740,240" class="line"/>
+  <path d="M300,120 L300,200" class="line"/>
+  <text x="300" y="60" class="t" text-anchor="middle">I2C / SPI / Pins</text>
+  <text x="600" y="320" class="t">Notes: Connect DS3231 via I2C (SDA A4, SCL A5). Servo to PWM pin (D9), LCD to 4-bit mode or I2C backpack, IR sensor to digital input, buzzer to D6, LEDs to D7/D8 with resistors.</text>
+</svg>
